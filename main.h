@@ -20,7 +20,7 @@ int print_percent(va_list list);
 
 typedef struct type
 {
-	char *type;
+	char type;
 	void (*f)(va_list list);
 } type_t;
 
