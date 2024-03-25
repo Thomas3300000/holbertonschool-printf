@@ -1,4 +1,4 @@
-#include <main.h>
+#include "main.h"
 
 /*
  *
@@ -6,7 +6,7 @@
  *
  *
  */
-void print_c(va_list args)
+void print_c(va_list list)
 {
 	char c; 
 
