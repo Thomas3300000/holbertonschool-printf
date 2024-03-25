@@ -4,8 +4,12 @@
 #include <stdio.h>
 #include <stdarg.h>
 
+
+int _putchar(char c);
 int _printf(const char *format, ...);
-void print_c(va_list args);
+void print_c(va_list list);
+void print_s(va_list list);
+void print_percent(va_list list);
 
 /**
  * struct type - Struct type
@@ -16,8 +20,8 @@ void print_c(va_list args);
 
 typedef struct type
 {
-	char type;
-	void (*f)(va_list);
+	char *type;
+	void (*f)(va_list list);
 } type_t;
 
 #endif
