@@ -3,7 +3,6 @@
 
 /**
  * print_c - print a character
- *
  * @args: arguments to prints
  *
  * Return: character
@@ -49,13 +48,8 @@ int print_s(va_list list)
  *
  * Return: percent
  */
-int print_percent(va_list list)
+int print_percent(va_list list __attribute__((unused)))
 {
-	char *str = "%";
-
-	if (va_arg(list, int) == *str)
-	{
-		return (*str);
-	}
-	return (*str);
+	_putchar('%');
+	return (1);
 }
