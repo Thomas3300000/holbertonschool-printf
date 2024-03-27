@@ -10,23 +10,20 @@ int _printf(const char *format, ...)
 {
 	va_list list;
 	int cptform, cptype, len = 0;
-
-	type_t types[] = {
-		{'c', print_c},
+	type_t types[] = {{'c', print_c},
 		{'s', print_s},
 		{'%', print_percent},
-		{'\0', NULL}
-	};
+		{'\0', NULL}};
 
 	va_start(list, format);
 	for (cptform = 0; format[cptform] != '\0'; cptform++)
 	{
-		if (format[cptform] == '%' && format[cptform + 1] == '\0')
-                {
-                        return (0);
-                }
-		else if (format[cptform] == '%')
+		if (format[cptform] == '%')
 		{
+			if (format[cptform + 1]  == '\0')
+			{
+				return (0);
+			}
 			for (cptype = 0; types[cptype].type != '\0'; cptype++)
 			{
 				if (format[cptform + 1] == types[cptype].type)
@@ -48,8 +45,6 @@ int _printf(const char *format, ...)
 			len++;
 		}
 	}
-
-		va_end(list);
-
-		return (len);
+	va_end(list);
+	return (len);
 }
