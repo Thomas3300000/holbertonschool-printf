@@ -20,10 +20,6 @@ int _printf(const char *format, ...)
 	{
 		if (format[cptform] == '%')
 		{
-			if (format[cptform + 1]  == '\0')
-			{
-				return (0);
-			}
 			for (cptype = 0; types[cptype].type != '\0'; cptype++)
 			{
 				if (format[cptform + 1] == types[cptype].type)
@@ -32,12 +28,12 @@ int _printf(const char *format, ...)
 					cptform++;
 					break;
 				}
+			}
 				if (types[cptype].type == '\0')
 				{
 					_putchar('%');
 					len++;
 				}
-			}
 		}
 		else
 		{
