@@ -36,17 +36,16 @@ int print_s(va_list list)
 		len = len + _putchar('l');
 		len = len + _putchar(')');
 
-		return (len);
 	}
 	else
 	{
 		for (cpt = 0; str[cpt] != '\0'; cpt++)
 		{
 			_putchar(str[cpt]);
+			len++;
 		}
-
-		return (cpt);
 	}
+	return (len);
 }
 
 /**

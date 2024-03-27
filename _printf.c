@@ -22,7 +22,7 @@ int _printf(const char *format, ...)
 		{
 			if (format[cptform + 1]  == '\0')
 			{
-				return (1);
+				return (0);
 			}
 			for (cptype = 0; types[cptype].type != '\0'; cptype++)
 			{
