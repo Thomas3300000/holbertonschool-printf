@@ -21,7 +21,11 @@ int _printf(const char *format, ...)
 	va_start(list, format);
 	for (cptform = 0; format[cptform] != '\0'; cptform++)
 	{
-		if (format[cptform] == '%')
+		if (format[cptform] == '%' && format[cptform + 1] == '\0')
+                {
+                        return (0);
+                }
+		else if (format[cptform] == '%')
 		{
 			for (cptype = 0; types[cptype].type != '\0'; cptype++)
 			{
