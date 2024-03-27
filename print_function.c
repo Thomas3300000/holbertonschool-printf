@@ -58,7 +58,7 @@ int print_percent(va_list list __attribute__((unused)))
  * print a function decimal that print a decimal
  * Return: 
  */
-int print_decimal(va_list list);
+int print_decimal(va_list list)
 {
         int count = 1, m = 0;
         unsigned int n = 0;
