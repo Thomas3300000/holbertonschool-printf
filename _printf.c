@@ -31,11 +31,11 @@ int _printf(const char *format, ...)
 					cptform++;
 					break;
 				}
-			}
-			if (types[cptype].type == '\0')
-			{
-				_putchar('%');
-				len++;
+				if (types[cptype].type == '\0')
+				{
+					_putchar('%');
+					len++;
+				}
 			}
 		}
 		else
@@ -49,4 +49,3 @@ int _printf(const char *format, ...)
 
 		return (len);
 }
-
