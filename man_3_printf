@@ -1,0 +1,15 @@
+.TH MAN-PAGES "2024/03/28" "Linux" "Linux Programmers Manual _printf"
+
+.SH NAME
+
+_printf
+
+SYNOPSIS
+
+#include "main.h"
+
+int _printf(const char *format, ...)
+
+DESCRIPTION
+
+

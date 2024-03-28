@@ -20,20 +20,15 @@ int _printf(const char *format, ...)
 	{
 		if (format[cptform] == '%')
 		{
+			cptform++;
 			for (cptype = 0; types[cptype].type != '\0'; cptype++)
 			{
-				if (format[cptform + 1] == types[cptype].type)
+				if (format[cptform] == types[cptype].type)
 				{
 					len = len + types[cptype].f(list);
-					cptform++;
 					break;
 				}
 			}
-				if (types[cptype].type == '\0')
-				{
-					_putchar('%');
-					len++;
-				}
 		}
 		else
 		{
