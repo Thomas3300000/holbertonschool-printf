@@ -20,7 +20,8 @@ int _printf(const char *format, ...)
 		return (-1);
 	for (cptform = 0; format[cptform] != '\0'; cptform++)
 	{
-		if (format[cptform] == '%' && format[cptform + 1] != '!' && format[cptform + 1] != 'K')
+		if (format[cptform] == '%' && format[cptform + 1] != '!'
+&& format[cptform + 1] != 'K')
 		{
 			cptform++;
 			for (cptype = 0; types[cptype].type != '\0'; cptype++)
