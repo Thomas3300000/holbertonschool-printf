@@ -13,9 +13,6 @@ This project is an implementation of the printf function.
 - Flowchart
 - Autors
 
-## Installation
-To get started, you can clone this project to your machine using the following command:
-git clone https://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@github.com/Thomas3300000/holbertonschool-printf.git
 
 ## Command of compilation
 The command to compil the program :
