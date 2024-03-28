@@ -16,7 +16,9 @@ This project is an implementation of the printf function.
 
 ## Command of compilation
 The command to compil the program :
+```c
 gcc -Wall -Wextra -Werror -pedantic -std=gnu89 -Wno-format *.c
+```
 
 ## Requirements
 To compile this program, you'll need Ubuntu 20.04, the GCC compiler, and Git.
