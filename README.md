@@ -57,6 +57,7 @@ Valgrind step: Valgrind is a comprehensive tool suite featuring debugging and pr
 
 
 
+![Flowchart](https://github.com/Thomas3300000/holbertonschool-printf/assets/159032920/b04554cb-9e52-43dc-acef-b5fda8b3b377)
 
 
 
