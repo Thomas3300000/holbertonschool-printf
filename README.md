@@ -37,6 +37,8 @@ int main(void)
 	_printf("%s", sentence);
 	return (0);
 }
+
+stdout: Hellp world !
 ```
 To print a character :
 ```c
