@@ -29,29 +29,50 @@ The following example demonstrates the usage of _printf:
 -----------------------------------------------------------------------
 
 #include "main.h"
-
+/**
+ * main - main function
+ *
+ * Return: 0
+ */
+int main(void)
+{
     _printf("Hello, %s!\n", "world");
     return (0);
+}
 
 stdout: Hello, world!
 
 -----------------------------------------------------------------------
 
 #include "main.h"
-
+/**
+ * main - main function
+ *
+ * Return: 0
+ */
+int main(void)
+{
     char letter = 'o'
 
     _printf("C is c%c%cl!\n", letter, letter);
     return (0);
+}
 
 stdout: C is cool!
 
 -----------------------------------------------------------------------
 
 #include "main.h"
-
+/**
+ * main - main function
+ *
+ * Return: 0
+ */
+int main(void)
+{
     _printf("100%% gagnant!\n");
     return (0);
+}
 
 stdout: 100% gagnant!
 

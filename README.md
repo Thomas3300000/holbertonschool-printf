@@ -1,7 +1,7 @@
 
 # Project C - printf
 
-## Description of the project 
+## Description of the project
 This project is an implementation of the printf function.
 
 ## Table of Contents
@@ -24,6 +24,13 @@ gcc -Wall -Wextra -Werror -pedantic -std=gnu89 -Wno-format *.c
 To compile this program, you'll need Ubuntu 20.04, the GCC compiler, and Git.
 ## Examples of use of the printf function
 ```c
+
+#include "main.h"
+/**
+ * main - main function
+ *
+ * Return: 0
+ */
 int main(void)
 {
 	sentence = "Hello world !";
@@ -34,13 +41,20 @@ int main(void)
 To print a character :
 ```c
 
-#include main(void)
-
-int main() {
-     c = 'A';
+#include "main.h"
+/**
+ * main - main function
+ *
+ * Return: 0
+ */
+int main(void)
+{
+    c = 'A';
     printf("The character is: %c\n", c);
-    return 0;
+    return (0);
 }
+
+stdout: The character is: A
 ```
 ## Testing
 Explanation of the code:
